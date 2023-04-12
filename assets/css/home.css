@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding-top: 30px;
+    padding-top: 100px;
 }
 
 .home-page-header .left{
@@ -65,8 +65,9 @@
 
 .projects{
     background-color: #000000;
+    color: #FFFFFF;
     margin-top: -10px;
-    z-index: 100;
+    z-index: 1;
 }
 
 .projects #page-name{
@@ -74,10 +75,286 @@
     height: 80px;
 }
 
-.projects 
+.projects .project-image{
+    height: 300px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 23px 21px 0px #C8F9E4;
+}
 
-.about-me{}
+.projects .project-left{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
-.my-blogs{}
+.projects .project-name{
+    font-size: 50px;
+    max-width: 300px;
+}
 
-.contacts{}
+.projects .project-short-description{
+    font-size: 30px;
+    max-width: 450px;
+    padding-top: 20px;
+}
+
+.projects .project-code-stack{
+    display: flex;
+    font-size: 25px;
+    color: #FFFFFF;
+    opacity: 56%;
+    font-family: monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.projects .project-code-stack li{
+    list-style: none;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.projects .project-right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.projects .project-links img{
+    margin-right: 50px;
+    height: 40px;
+}
+
+.about-me{
+    /* background-color: #C8F9E4; */
+    color: #000000;
+    margin-top: -10px;
+}
+
+.about-me #page-name{
+    margin-top: 30px;
+    margin-left: 50px;
+    height: 80px;
+}
+
+.about-me .about-area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.about-me .about-area .left{
+    font-size: 30px;
+    line-height: 45px;
+    max-width: 700px;
+}
+
+.about-me .about-area .left .about-me-text{
+    padding-bottom: 20px;
+}
+
+.about-me .about-area .left .about-me-text strong{
+    font-style: italic;
+    color: #0E1681;
+}
+
+.about-me .about-area .left ul{
+    display: flex;
+    font-size: 25px;
+    color: #0E1681;
+    opacity: 77%;
+    font-family: monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-me .about-area .left ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+
+.my-blogs{
+    background-color: #0E1681;
+    color: #FFFFFF;
+    margin-top: -10px;
+    z-index: 1;
+    padding: 10px 0 50px 0;
+}
+
+.my-blogs #page-name{
+    margin-top: 30px;
+    height: 80px;
+}
+
+.my-blogs #blog-description{
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.my-blogs .blog-cards-area{
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.my-blogs .blog-cards-area .card{
+    height: 279px;
+    width: 388px;
+    /* padding-left: 10px;
+    padding-bottom: 10px; */
+    background-image: url(../images/kitchen-dashboard-project-image.png);
+    border: 3px solid #C8F9E4;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background: linear-gradient(-70deg, #C8F9E4 30%, rgba(0, 0, 0, 0) 30%, url(../images/kitchen-dashboard-project-image.png) ); */
+}
+
+.my-blogs .blog-cards-area .card .card-title{
+    font-size: 20px;
+    /* backdrop-filter: blur(50px); */
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.my-blogs .blog-cards-area .card .card-category{
+    font-size: 18px;
+    font-family: monospace;
+    /* backdrop-filter: blur(50px); */
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.my-blogs #view-blogs-btn{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 200;
+    padding: 10px 20px 10px 20px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+}
+
+.my-blogs img{
+    height: 20px;
+}
+
+.contact{
+    background-color: #EDFDF6;
+    padding: 10px 0 50px 0;
+}
+
+.contact #page-name{
+    margin-top: 30px;
+    height: 80px;
+    margin-bottom: 50px;
+}
+
+.contact .contact-area{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-area .left form{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.contact .contact-area .left form label{
+    margin-bottom: 10px;
+    color: #ACACAC;
+}
+
+.contact .contact-area .left form input, textarea{
+    width: 500px;
+    font-size: 23px;
+    margin-bottom: 45px;
+    padding-bottom: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 4px solid #0E1681;
+    background-color: transparent;
+    color: #787676;
+}
+
+.contact .contact-area .left form textarea{
+    height: 80px;
+}
+
+.contact .contact-area .left form #send-message-button{
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #0E1681;
+    padding: 10px 0 10px 0;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.contact .contact-area .left form #view-resume-svg{
+    height: 20px;
+}
+
+.contact .contact-area .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contact .contact-area .right #email-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: #FFFFFF;
+    background-color: #0E1681;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.contact .contact-area .right #telegram-link{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    border: 3.4px solid #000000;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact .contact-area .right #phone-number-link{
+    display: flex;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+}
+
+.contact .contact-area .right #resume-link{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    border: 3.4px solid #000000;
+    border-radius: 8px;
+    text-align: center;
+}

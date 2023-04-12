@@ -19,28 +19,33 @@ body{
 }
 
 nav{
-    margin: 10px 40px 0 40px;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 20px 0 40px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content:unset; */
     align-items: center;
     font-size: 23px;
     font-family: 'DM Sans', sans-serif;
+    position: fixed;
+    -webkit-backdrop-filter:blur(100px);
+    backdrop-filter:blur(100px);
+    border-bottom: .01px solid #D4D4D4;
+    z-index: 100;
 }
 
-#below-nav{
-    border: .01px solid #D4D4D4;
-    margin-top: 10px;
-}
 
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin-left: 630px;
 }
 
 nav ul li{
-    margin-left: 40px;
+    margin-left: 25px;
 }
 
 nav ul li a{
