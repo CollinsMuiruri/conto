@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .home-page-header{
     background: linear-gradient(-90deg, #C8F9E4 60%, rgba(0, 0, 0, 0) 60%);
     display: flex;
@@ -107,7 +109,6 @@
     font-size: 25px;
     color: #FFFFFF;
     opacity: 56%;
-    font-family: monospace;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -116,6 +117,7 @@
     list-style: none;
     padding-right: 10px;
     padding-bottom: 10px;
+    font-family: 'Fira Code', monospace;
 }
 
 .projects .project-right{
@@ -170,7 +172,7 @@
     font-size: 25px;
     color: #0E1681;
     opacity: 77%;
-    font-family: monospace;
+    font-family: 'Fira Code', monospace;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -181,6 +183,7 @@
 }
 
 .my-blogs{
+    /* width: 100vw !important; */
     background-color: #0E1681;
     color: #FFFFFF;
     margin-top: -10px;
@@ -205,35 +208,41 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+    overflow-x: auto;
 }
 
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
 .my-blogs .blog-cards-area .card{
-    height: 279px;
-    width: 388px;
+    min-height: 279px;
+    min-width: 388px;
+    max-height: 279px;
+    max-width: 388px;
     /* padding-left: 10px;
     padding-bottom: 10px; */
-    background-image: url(../images/kitchen-dashboard-project-image.png);
     border: 3px solid #C8F9E4;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* background: linear-gradient(-70deg, #C8F9E4 30%, rgba(0, 0, 0, 0) 30%, url(../images/kitchen-dashboard-project-image.png) ); */
+    margin-right: 2rem;
+    flex: 1 1 300px;
+    cursor: pointer;
 }
 
 .my-blogs .blog-cards-area .card .card-title{
     font-size: 20px;
-    /* backdrop-filter: blur(50px); */
     padding-left: 10px;
     padding-bottom: 10px;
 }
 
 .my-blogs .blog-cards-area .card .card-category{
     font-size: 18px;
-    font-family: monospace;
-    /* backdrop-filter: blur(50px); */
+    font-family: 'Fira Code', monospace;
     padding-left: 10px;
     padding-bottom: 10px;
+    color: #C8F9E4;
 }
 
 .my-blogs #view-blogs-btn{

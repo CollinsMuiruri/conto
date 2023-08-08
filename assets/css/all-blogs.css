@@ -1,0 +1,9 @@
+.jamaa{
+    display: flex;
+    overflow-x: auto;
+}
+
+img{
+    width: 1000px;
+    height: 500px;
+}
